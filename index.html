@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p15_constructivismo</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+
+    <script>
+
+     $(document).ready(function(){
+
+         // Caja A declaracion variable
+         var changeColorA = false;
+
+        $("#a").on("mouseenter", function(){
+            if (changeColorA == false) {
+                $("#a > .vertical > h2").css("color","#8FB8ED");
+                $("#a > .vertical > h1").css("color","#8FB8ED");
+                $("#a").css("background-color","#F1E3F3");
+                changeColorA = true;
+            } else {
+                $("#a > .vertical > h2").css("color","#cc5803");
+                $("#a > .vertical > h1").css("color","#cc5803");
+                $("#a").css("background-color","#EDE0D4");
+                changeColorA = false;
+            }
+        });
+        
+        // caja B
+
+        $("#up").click(function(){
+            $("#b").slideUp();
+        });
+
+        $("#down").click(function(){
+            $("#b").slideDown();
+        });
+
+
+        // Caja C declaracion variable
+        var changeColorC = false;
+
+        $("#c").on("mouseenter", function(){
+            if (changeColorC == false) {
+                $("#c > h2").css("color","#8FB8ED");
+                $("#c > h5").css("color","#8FB8ED");
+                $("#c > h6").css("color","#8FB8ED");
+                $("#c").css("background-color","#F1E3F3");
+                changeColorC = true;
+            } else {
+                $("#c > h2").css("color","#cc5803");
+                $("#c > h5").css("color","#cc5803");
+                $("#c > h6").css("color","#cc5803");
+                $("#c").css("background-color","#EDE0D4");
+                changeColorC = false;
+            }
+        });
+
+        // Caja D
+
+        $("#img_on").click(function(){
+                $("#img_on").hide();
+            });
+
+        $("#img_off").click(function(){
+                $("#img_on").show();
+            });
+
+        $("#img_on").click(function(){
+                $("#d").hide();
+            });
+
+            $("#img_off").click(function(){
+                $("#d").show();
+            });
+
+        // Caja E
+
+        $("#boton_e").click(function(){
+        $("#e").fadeToggle();
+         });
+
+        //  Caja F
+
+        $("#out").click(function(){
+            $("#f").fadeOut();
+        });
+
+        $("#in").click(function(){
+            $("#f").fadeIn();
+        });
+
+        // Caja G
+
+        $("#boton_g").click(function(){
+        $("#g > #desaparecer").fadeToggle();
+         });
+
+
+     });
+
+
+
+        
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <div id="a">
+            <div class="vertical"><h2>Brno-Julianov</h2></div>
+            <div class="vertical"><h1>PASMO</h1></div>
+        </div>
+
+        <div id="b">
+            <div id="up">
+                <button class="button">Up</button>
+             </div>
+           <h5>Nous prions nos amis de nous envoyer des clichés, photographies, dessins et articles</h5> 
+           <h5>Unsere Freunde werden gebeten uns Clichés, Photographien, Zeichnungen und Artikel schiken zu wollen. </h5> 
+        </div>
+        
+        
+
+        <div id="b2">
+            <div id="down">
+                <button class="button">Down</button>
+           </div>
+            <h2>"La gente ignora el diseño que ignora a la gente"</h2> 
+            <h6> Frank Chimero </h6> 
+            
+         </div>
+        
+        <div id="c">
+            <h6>ANTHOLOGIE</h6>
+            <h2>du Groupe Moderne d'Art de Liége</h2>
+            <h5>Rédaction: GEORGES LINZE. Rue Xhovémont 104, Liége.</h5>
+        </div>
+
+        <div id="d">
+            <div class="vertical"><h2>et T.v. Desburg</h2></div>
+            <div class="vertical"><h2>Directors: I.K.Bonset</h2></div>
+            <div class="vertical"><h2>Haag-Kimopstraat 18</h2></div>
+            <div class="vertical"><h3>MECANO</h3></div>
+            <div id="img_on"><img src="img/boton-01.png" alt=""></div>
+            
+        </div>
+
+      
+        
+
+        <div id="d2">
+           <div id="referente"><a href="https://monoskop.org/Avant-garde_and_modernist_magazines#/media/File:Blok_6-7_1924_inside_back_cover.jpg"><img src="img/inside back cover of block 6-7, Warsaw, 1924.jpg" ></a></div> 
+            <h3>Warsaw, 1924</h3>
+            <h2>Inside back cover of Blok 6-7</h2>
+           <div id="img_off"><img src="img/boton-02.png" alt=""></div>
+            
+        </div>
+
+        <div id="e">
+            <div class="vertical"><h2>Directeur: T. Murayama</h2></div>
+            <div class="vertical"><h2>tokio (Japan) Kamiochiai 186</h2></div>
+            <div class="vertical"><h8>MAVO</h8></div>
+        </div>
+
+        <div id="boton_e">
+            <button class="button"> X</button>
+        </div>
+
+        <div id="e2">
+            <div><h2>"Si puedes diseñar una cosa entoces puedes diseñarlo todo;si lo haces bien, perdurara para siembre"</h2></div>
+            <div><h8>Massivo Vignelli</h8></div>
+        </div>
+
+        <div id="f">
+            <h7>Contimporanul</h7>
+            <h2> 29,Str. Trinitati Bucarest</h2>
+            <h2>Directeurs:</h2>
+            <h2>IANCO et VINEA</h2>
+            <div id="out">
+                <button class="button">Fade Out</button>
+             </div>
+        </div>
+
+        
+
+        
+
+        <div id="f2">
+            <h7>Jessica Walsh</h7>
+            <h2> "Haz el trabajo que le haga bien a tu alma, no a tu ego"</h2>
+            <div id="in">
+                <button class="button">Fade In</button>
+           </div>
+        </div>
+
+        <div id="g">
+            <div id="desaparecer">
+                <h4>G</h4>
+                <div id="text_g">
+                    <div class="vertical"><h2>HANS RICHTER.</h2></div>
+                    <div class="vertical"><h2>Directeur:</h2></div>
+                    <div class="vertical"><h2>Eschenstr. 7</h2></div>
+                    <div class="vertical"><h2>Berlin-Friedenau</h2></div>
+                    
+            </div>
+            </div>
+           
+        <div id="boton_g"> 
+            <button class="button">X</button>
+        </div>
+         </div>
+
+
+       
+
+        <div id="g2">
+            <div id="text_g2">
+                <h7>Muriel Cooper</h7>
+                <div><h2>"La información solo es útil cuando es comprendida"</h2></div>
+                
+        </div>   
+        </div>
+
+    </div>
+</body>
+</html>
